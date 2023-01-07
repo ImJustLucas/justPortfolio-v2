@@ -2,6 +2,12 @@
 
 @import "reset.css";
 
+/* TYPOGRAPHY */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap");
+
 /* VARIABLES */
 
-@import "variables.css"
+@import "variables.css";
+
+/* GLOBAL */
