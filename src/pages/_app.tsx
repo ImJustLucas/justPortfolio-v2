@@ -1,5 +1,8 @@
-import { Layout } from "@layouts/layout";
 import type { AppProps } from "next/app";
+
+import { Layout } from "@layouts/layout";
+
+import "@styles/reset.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
