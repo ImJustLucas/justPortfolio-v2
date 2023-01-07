@@ -1,3 +1,7 @@
 export const Menu = () => {
-  return <div>Menu</div>;
+  return <Menu>Menu</Menu>;
 };
+
+const Menu = styled.div`
+  width: 30%;
+`;
