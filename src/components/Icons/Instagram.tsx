@@ -1,6 +1,11 @@
 import { IconTypes } from "@typesDef/icons";
 
+import SOCIALS from "@constants/socials";
+
 export const InstagramIcon = ({ color }: IconTypes) => {
+  const handleClick = () => {
+    window.open(SOCIALS.INSTAGRAM, "_blank", "noopener,noreferrer");
+  };
   return (
     <svg
       width="24"
@@ -8,6 +13,7 @@ export const InstagramIcon = ({ color }: IconTypes) => {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={handleClick}
     >
       <g clip-path="url(#clip0_1_69)">
         <path
