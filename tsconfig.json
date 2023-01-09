@@ -21,7 +21,8 @@
       "@hooks/*": ["./src/hooks/*"],
       "@screens/*": ["./src/screens/*"],
       "@styles/*": ["./src/styles/*"],
-      "@layouts/*": ["./src/layouts/*"]
+      "@layouts/*": ["./src/layouts/*"],
+      "@typesDef/*": ["./src/types/*"]
     }
   },
 
