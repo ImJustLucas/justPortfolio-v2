@@ -18,9 +18,12 @@ export const IconRow = () => {
   );
 };
 
+//add this section to them bottom of the parent component
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-top: auto;
 `;
