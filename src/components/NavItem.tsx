@@ -2,6 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 import { LinkPathName } from "@typesDef/link";
+import useSound from "use-sound";
 
 type NavItem = {
   link: LinkPathName;
@@ -9,8 +10,13 @@ type NavItem = {
 };
 
 export const NavItem = ({ link, name }: NavItem) => {
+  const [playClickSound] = useSound("/sounds/type.wav");
+
+  const handleClick = () => {
+    playClickSound();
+  };
   return (
-    <NavItemContaier>
+    <NavItemContaier onClick={handleClick}>
       <NavLink href={link} passHref>
         {name}
       </NavLink>
