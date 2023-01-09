@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import { NavBar } from "@components/NavBar";
 import { IconRow } from "@components/IconRow";
+import { PresenceBlock } from "@components/PresenceBlock";
 
 export const Menu = () => {
   return (
@@ -10,6 +11,7 @@ export const Menu = () => {
         <Title>Lucas.</Title>
       </TitleContainer>
       <NavBar />
+      <PresenceBlock />
       <IconRow />
     </Container>
   );
@@ -17,10 +19,12 @@ export const Menu = () => {
 
 const Container = styled.div`
   width: 30%;
-  height: 100vh;
+  max-width: 370px;
+  height: calc(100vh - 40px);
   background-color: var(--color-lightblue);
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 `;
 
 const TitleContainer = styled.div`
@@ -35,4 +39,10 @@ const Title = styled.h1`
   font-size: 5rem;
   text-transform: uppercase;
   color: var(--color-dark);
+`;
+
+const Separator = styled.hr`
+  width: 80%;
+  size: 1px;
+  margin: 20px auto;
 `;
