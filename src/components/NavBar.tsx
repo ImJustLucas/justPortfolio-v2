@@ -22,7 +22,6 @@ export const NavBar = () => {
       activePath = "180";
       break;
   }
-  console.log(activePath);
 
   return (
     <Navbar activePath={activePath}>
