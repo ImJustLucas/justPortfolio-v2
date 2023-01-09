@@ -1,18 +1,16 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-
 import styled from "styled-components";
 
+import { LinkPathName } from "@typesDef/link";
+
 type NavItem = {
-  link: "/" | "/about" | "/tech" | "/contact";
+  link: LinkPathName;
   name: string;
 };
 
 export const NavItem = ({ link, name }: NavItem) => {
-  const router = useRouter();
-
   return (
-    <NavItemContaier className={router.pathname == link ? "active" : ""}>
+    <NavItemContaier>
       <NavLink href={link} passHref>
         {name}
       </NavLink>
@@ -35,8 +33,4 @@ const NavItemContaier = styled.div`
   display: flex;
   flex-direction: center;
   justify-content: center;
-
-  &.active {
-    border-right: 3px solid var(--color-darkblue);
-  }
 `;
