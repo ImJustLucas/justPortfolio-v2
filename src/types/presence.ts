@@ -11,18 +11,20 @@ export interface Presence {
 
 export interface Activity {
   type: number;
-  timestamps: Timestamps;
-  sync_id?: string;
   state: string;
-  session_id?: string;
-  party?: Party;
   name: string;
   id: string;
   flags?: number;
-  details: string;
+  emoji?: Emoji;
   created_at: number;
-  assets: Assets;
-  application_id?: number;
+  application_id?: string;
+  timestamps?: Timestamps;
+  sync_id?: string;
+  session_id?: string;
+  party?: Party;
+  details?: string;
+  buttons?: string[];
+  assets?: Assets;
 }
 
 export interface Assets {
@@ -56,4 +58,10 @@ export interface Spotify {
   artist: string;
   album_art_url: string;
   album: string;
+}
+
+export interface Emoji {
+  name: string;
+  id?: string;
+  animated?: boolean;
 }
