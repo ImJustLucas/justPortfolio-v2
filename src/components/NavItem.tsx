@@ -26,6 +26,8 @@ export const NavItem = ({ link, name }: NavItem) => {
 
 const NavLink = styled(Link)`
   font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
   font-family: "Inter", sans-serif;
   text-decoration: none;
   color: var(--color-dark);
