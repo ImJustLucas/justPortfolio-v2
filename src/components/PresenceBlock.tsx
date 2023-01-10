@@ -1,25 +1,46 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLanyard } from "react-use-lanyard";
+import styled from "styled-components";
 
-import { PresenceChilling } from "./Presence/PresenceChilling";
+import { PresenceListening } from "@components/Presence/PresenceListening";
+import { PresenceActivity } from "@components/Presence/PresenceActivity";
 import MAIN from "@constants/main";
+import { Activity } from "@typesDef/presence";
 
-type PresenceProps = string;
+type PresenceProps = "activity" | "listening" | "custom";
 
 export const PresenceBlock = () => {
+  const [presence, setPresence] = useState<PresenceProps>();
   const { loading, status /*, websocket */ } = useLanyard({
     userId: MAIN.discordID,
     socket: true,
   });
 
-  const [presence, setPresence] = useState<PresenceProps>("nothing");
+  const currentActivity = useMemo(
+    () => status?.activities?.filter((activity) => activity.type === 0)[0],
+    [status]
+  );
 
-  useEffect(() => {}, [loading]);
-  // return <pre>{!loading && JSON.stringify(status, null, 4)}</pre>;
+  useEffect(() => {
+    if (currentActivity) {
+      setPresence("activity");
+    } else if (status?.listening_to_spotify) {
+      setPresence("listening");
+    }
+  }, [status, currentActivity]);
 
-  if (!loading) {
-    console.log(JSON.stringify(status, null, 4));
-  }
-
-  return <div>{presence === "chilling" ? <PresenceChilling /> : null}</div>;
+  return (
+    <Container>
+      {presence === "activity" ? (
+        <PresenceActivity currentActivity={currentActivity} />
+      ) : null}
+      {presence === "listening" ? (
+        <PresenceListening spotify={status?.spotify} />
+      ) : null}
+    </Container>
+  );
 };
+
+const Container = styled.div`
+  margin-top: auto;
+`;
