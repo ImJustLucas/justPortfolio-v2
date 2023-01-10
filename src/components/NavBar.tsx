@@ -50,4 +50,10 @@ const Navbar = styled.nav<{ activePath?: string }>`
     top: ${({ activePath }) => activePath}px;
     transition: all 0.2s ease-in-out;
   }
+
+  @media (max-width: 768px) {
+    &::before {
+      display: none;
+    }
+  }
 `;
