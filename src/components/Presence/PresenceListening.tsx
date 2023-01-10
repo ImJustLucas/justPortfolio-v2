@@ -11,7 +11,6 @@ type PresenceListening = {
 export const PresenceListening = ({ spotify }: PresenceListening) => {
   return (
     <Container>
-      <h5>Listening to Spotify</h5>
       <>
         <ActivityRow>
           <ActivityImageContainer>

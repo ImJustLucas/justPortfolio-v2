@@ -10,7 +10,6 @@ type PresenceActivity = {
 export const PresenceActivity = ({ currentActivity }: PresenceActivity) => {
   return (
     <Container>
-      <h5>Doing something</h5>
       <ActivityRow>
         {currentActivity?.assets ? (
           <ActivityImageContainer>
