@@ -1,3 +1,3 @@
-import Tech from "@screens/Tech";
+import Tech from '@screens/Tech'
 
-export default Tech;
+export default Tech

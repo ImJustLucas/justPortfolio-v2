@@ -1,11 +1,11 @@
-import { IconTypes } from "@typesDef/icons";
+import { IconTypes } from '@typesDef/icons'
 
-import SOCIALS from "@constants/socials";
+import SOCIALS from '@constants/socials'
 
 export const LinkedinIcon = ({ color }: IconTypes) => {
   const handleClick = () => {
-    window.open(SOCIALS.LINKEDIN, "_blank", "noopener,noreferrer");
-  };
+    window.open(SOCIALS.LINKEDIN, '_blank', 'noopener,noreferrer')
+  }
   return (
     <svg
       width="24"
@@ -27,5 +27,5 @@ export const LinkedinIcon = ({ color }: IconTypes) => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

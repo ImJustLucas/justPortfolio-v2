@@ -1,3 +1,3 @@
-import About from "@screens/About";
+import About from '@screens/About'
 
-export default About;
+export default About

@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { Activity } from "@typesDef/presence";
-import COLORS from "@constants/colors";
+import { Activity } from '@typesDef/presence'
+import COLORS from '@constants/colors'
 
 type PresenceActivity = {
-  currentActivity: Activity | undefined;
-};
+  currentActivity: Activity | undefined
+}
 
 export const PresenceActivity = ({ currentActivity }: PresenceActivity) => {
   return (
@@ -28,8 +28,8 @@ export const PresenceActivity = ({ currentActivity }: PresenceActivity) => {
         </ActivityInfo>
       </ActivityRow>
     </Container>
-  );
-};
+  )
+}
 
 const Container = styled.div`
   width: 100%
@@ -40,24 +40,24 @@ const Container = styled.div`
   align-items: center;
   gap: 10px;
   font-family: "Inter", sans-serif;
-`;
+`
 
 const ActivityRow = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-`;
+`
 
 const ActivityImageContainer = styled.div`
   position: relative;
   height: 50px;
-`;
+`
 
 const ActivityImage = styled.img`
   height: 50px;
   width: 50px;
   border-radius: 10px;
-`;
+`
 
 const ActivitySecondaryImage = styled.img`
   position: absolute;
@@ -68,7 +68,7 @@ const ActivitySecondaryImage = styled.img`
   border-radius: 50%;
   background-color: #000;
   border: 2px solid #000;
-`;
+`
 
 const ActivityInfo = styled.div`
   margin-left: 1rem;
@@ -82,4 +82,4 @@ const ActivityInfo = styled.div`
     margin: 0;
     font-size: 0.8rem;
   }
-`;
+`

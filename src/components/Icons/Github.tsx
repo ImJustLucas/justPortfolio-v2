@@ -1,11 +1,11 @@
-import { IconTypes } from "@typesDef/icons";
+import { IconTypes } from '@typesDef/icons'
 
-import SOCIALS from "@constants/socials";
+import SOCIALS from '@constants/socials'
 
 export const GithubIcon = ({ color }: IconTypes) => {
   const handleClick = () => {
-    window.open(SOCIALS.GITHUB, "_blank", "noopener,noreferrer");
-  };
+    window.open(SOCIALS.GITHUB, '_blank', 'noopener,noreferrer')
+  }
 
   return (
     <svg
@@ -28,5 +28,5 @@ export const GithubIcon = ({ color }: IconTypes) => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

@@ -1,26 +1,26 @@
-import styled from "styled-components";
-import { useRouter } from "next/router";
+import styled from 'styled-components'
+import { useRouter } from 'next/router'
 
-import { NavItem } from "@components/NavItem";
+import { NavItem } from '@components/NavItem'
 
 export const NavBar = () => {
-  const router = useRouter();
-  const page = router.pathname;
-  let activePath: string = "0";
+  const router = useRouter()
+  const page = router.pathname
+  let activePath: string = '0'
 
   switch (page) {
-    case "/" || null:
-      activePath = "0";
-      break;
-    case "/about":
-      activePath = "60";
-      break;
-    case "/tech":
-      activePath = "120";
-      break;
-    case "/contact":
-      activePath = "180";
-      break;
+    case '/' || null:
+      activePath = '0'
+      break
+    case '/about':
+      activePath = '60'
+      break
+    case '/tech':
+      activePath = '120'
+      break
+    case '/contact':
+      activePath = '180'
+      break
   }
 
   return (
@@ -30,8 +30,8 @@ export const NavBar = () => {
       <NavItem link="/tech" name="tech i use" />
       <NavItem link="/contact" name="contact me" />
     </Navbar>
-  );
-};
+  )
+}
 
 const Navbar = styled.nav<{ activePath?: string }>`
   position: relative;
@@ -43,7 +43,7 @@ const Navbar = styled.nav<{ activePath?: string }>`
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 60px;
     border-right: 3px solid var(--color-darkblue);
@@ -56,4 +56,4 @@ const Navbar = styled.nav<{ activePath?: string }>`
       display: none;
     }
   }
-`;
+`

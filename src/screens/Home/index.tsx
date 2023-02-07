@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export default function Home() {
   return (
@@ -16,13 +16,13 @@ export default function Home() {
           fruit gunwalls wherry scuttle cog.
         </LeftTextContent>
         <RightTextContent>
-          {" "}
+          {' '}
           Fire ship square-rigged gibbet me hearties cackle fruit gunwalls
           wherry scuttle cog. Fire ship square-rigged gibbet me hearties cackle
           fruit gunwalls wherry scuttle cog.
         </RightTextContent>
         <RightTextContent>
-          {" "}
+          {' '}
           Fire ship square-rigged gibbet me hearties cackle fruit gunwalls
           wherry scuttle cog. Fire ship square-rigged gibbet me hearties cackle
           fruit gunwalls wherry scuttle cog.
@@ -40,37 +40,37 @@ export default function Home() {
         </WorkRow>
       </WorkContainer>
     </HomeContainer>
-  );
+  )
 }
 
 const HomeContainer = styled.div`
   padding: 70px 100px 0 70px;
-`;
+`
 
 const TitleSection = styled.h2`
   font-size: 42px;
-  font-family: "Cormorant Unicase", serif;
+  font-family: 'Cormorant Unicase', serif;
   font-weight: 400;
   font-style: normal;
   line-height: 50px;
   margin-bottom: 80px;
-`;
+`
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-`;
+`
 
 const LeftTextContent = styled.p`
   width: 40%;
-`;
+`
 
 const RightTextContent = styled.p`
   width: 40%;
   text-align: right;
   align-self: flex-end;
-`;
+`
 
 const WorkContainer = styled.div`
   display: flex;
@@ -78,7 +78,7 @@ const WorkContainer = styled.div`
   gap: 5px;
   width: 40%;
   margin-top: 50px;
-`;
+`
 
 const WorkRow = styled.div`
   display: flex;
@@ -86,4 +86,4 @@ const WorkRow = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid var(--color-dark);
   padding-bottom: 5px;
-`;
+`

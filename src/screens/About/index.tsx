@@ -1,3 +1,3 @@
 export default function About() {
-  return <>{"About Screen"}</>;
+  return <>{'About Screen'}</>
 }

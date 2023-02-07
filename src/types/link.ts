@@ -1,1 +1,1 @@
-export type LinkPathName = "/" | "/about" | "/tech" | "/contact";
+export type LinkPathName = '/' | '/about' | '/tech' | '/contact'
