@@ -2,6 +2,7 @@
   "name": "justportfolio-v2",
   "version": "0.1.0",
   "private": true,
+  "prettier": "@imjustlucas/prettier-config",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,6 +25,10 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@imjustlucas/prettier-config": "^1.0.2",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3"
   }
 }
