@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const ScreenContainer = styled.div`
-  width: 70%;
   height: 100vh;
   background-color: #fff;
+  flex: 1;
 `;
