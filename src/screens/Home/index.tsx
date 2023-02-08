@@ -45,6 +45,10 @@ export default function Home() {
 
 const HomeContainer = styled.div`
   padding: 70px 100px 0 70px;
+
+  @media (max-width: 768px) {
+    padding: 70px 50px 0 50px;
+  }
 `
 
 const TitleSection = styled.h2`
@@ -54,6 +58,12 @@ const TitleSection = styled.h2`
   font-style: normal;
   line-height: 50px;
   margin-bottom: 80px;
+
+  @media (max-width: 768px);
+   {
+    font-size: 32px;
+    text-align: center;
+  }
 `
 
 const TextContainer = styled.div`
@@ -64,12 +74,22 @@ const TextContainer = styled.div`
 
 const LeftTextContent = styled.p`
   width: 40%;
+
+  @media (max-width: 768px);
+   {
+    width: 100%;
+  }
 `
 
 const RightTextContent = styled.p`
   width: 40%;
   text-align: right;
   align-self: flex-end;
+
+  @media (max-width: 768px);
+   {
+    width: 100%;
+  }
 `
 
 const WorkContainer = styled.div`
@@ -78,6 +98,11 @@ const WorkContainer = styled.div`
   gap: 5px;
   width: 40%;
   margin-top: 50px;
+
+  @media (max-width: 768px);
+   {
+    width: 100%;
+  }
 `
 
 const WorkRow = styled.div`
@@ -86,4 +111,15 @@ const WorkRow = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid var(--color-dark);
   padding-bottom: 5px;
+
+  @media (max-width: 768px);
+   {
+    span {
+      font-size: 14px;
+
+      &:last-child {
+        color: var(--color-darkblue);
+      }
+    }
+  }
 `
