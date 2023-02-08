@@ -6,7 +6,7 @@ import { NavItem } from '@components/NavItem'
 export const NavBar = () => {
   const router = useRouter()
   const page = router.pathname
-  let activePath: string = '0'
+  let activePath = '0'
 
   switch (page) {
     case '/' || null:
