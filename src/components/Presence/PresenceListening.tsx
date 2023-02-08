@@ -4,11 +4,11 @@ import { Spotify } from '@typesDef/presence'
 import SpotifyLogo from '@static/images/spotify-logo.png'
 import COLORS from '@constants/colors'
 
-type PresenceListening = {
+type PresenceListeningProps = {
   spotify: Spotify | undefined
 }
 
-export const PresenceListening = ({ spotify }: PresenceListening) => {
+export const PresenceListening = ({ spotify }: PresenceListeningProps) => {
   return (
     <Container>
       <>

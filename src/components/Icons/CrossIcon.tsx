@@ -1,4 +1,6 @@
-export const CrossIcon = (props: any) => {
+import { SVGProps } from 'react'
+
+export const CrossIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

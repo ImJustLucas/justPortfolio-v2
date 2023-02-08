@@ -3,11 +3,13 @@ import styled from 'styled-components'
 import { Activity } from '@typesDef/presence'
 import COLORS from '@constants/colors'
 
-type PresenceActivity = {
+type PresenceActivityProps = {
   currentActivity: Activity | undefined
 }
 
-export const PresenceActivity = ({ currentActivity }: PresenceActivity) => {
+export const PresenceActivity = ({
+  currentActivity,
+}: PresenceActivityProps) => {
   return (
     <Container>
       <ActivityRow>

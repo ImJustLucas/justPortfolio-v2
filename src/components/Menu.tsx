@@ -8,7 +8,7 @@ import { CrossIcon } from '@components/Icons/CrossIcon'
 import { BurgerIcon } from '@components/Icons/BurgerIcon'
 
 export const Menu = () => {
-  const [openOnMobile, setOpenOnMobile] = useState<Boolean>(false)
+  const [openOnMobile, setOpenOnMobile] = useState<boolean>(false)
 
   const toggleMobileMenu = () => {
     setOpenOnMobile(!openOnMobile)
@@ -36,7 +36,7 @@ export const Menu = () => {
   )
 }
 
-const Container = styled.div<{ openOnMobile: Boolean }>`
+const Container = styled.div<{ openOnMobile: boolean }>`
   width: 30%;
   max-width: 370px;
   height: calc(100vh - 40px);

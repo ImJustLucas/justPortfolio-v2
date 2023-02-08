@@ -4,12 +4,12 @@ import styled from 'styled-components'
 import { LinkPathName } from '@typesDef/link'
 import useSound from 'use-sound'
 
-type NavItem = {
+type NavItemProps = {
   link: LinkPathName
   name: string
 }
 
-export const NavItem = ({ link, name }: NavItem) => {
+export const NavItem = ({ link, name }: NavItemProps) => {
   const [playClickSound] = useSound('/sounds/type.wav')
 
   const handleClick = () => {

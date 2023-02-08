@@ -5,13 +5,12 @@ import styled from 'styled-components'
 import { PresenceListening } from '@components/Presence/PresenceListening'
 import { PresenceActivity } from '@components/Presence/PresenceActivity'
 import MAIN from '@constants/main'
-import { Activity } from '@typesDef/presence'
 
 type PresenceProps = 'activity' | 'listening' | 'custom'
 
 export const PresenceBlock = () => {
   const [presence, setPresence] = useState<PresenceProps>()
-  const { loading, status /*, websocket */ } = useLanyard({
+  const { status /*, websocket */ } = useLanyard({
     userId: MAIN.discordID,
     socket: true,
   })
