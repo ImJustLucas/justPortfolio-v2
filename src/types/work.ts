@@ -1,9 +1,17 @@
 export interface WorkType {
-  name: string
-  date: string
-  brief: string
+  header: WorkHeaderType
   description: string
   url: string
+  tags: WorkTagsType
+}
+
+export interface WorkHeaderType {
+  title: string
+  description: string
   image: string
-  tags: string[]
+  date: string
+}
+
+export interface WorkTagsType {
+  [key: string]: string
 }
