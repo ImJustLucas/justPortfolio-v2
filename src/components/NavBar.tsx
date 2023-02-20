@@ -12,7 +12,7 @@ export const NavBar = () => {
     case '/' || null:
       activePath = '0'
       break
-    case '/about':
+    case '/work':
       activePath = '60'
       break
     case '/tech':
@@ -26,7 +26,7 @@ export const NavBar = () => {
   return (
     <Navbar activePath={activePath}>
       <NavItem link="/" name="me" />
-      <NavItem link="/about" name="all my works" />
+      <NavItem link="/work" name="all my works" />
       <NavItem link="/tech" name="tech i use" />
       <NavItem link="/contact" name="contact me" />
     </Navbar>

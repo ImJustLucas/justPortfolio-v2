@@ -59,8 +59,7 @@ const TitleSection = styled.h2`
   line-height: 50px;
   margin-bottom: 80px;
 
-  @media (max-width: 768px);
-   {
+  @media (max-width: 768px) {
     font-size: 32px;
     text-align: center;
   }
