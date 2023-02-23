@@ -2,7 +2,8 @@ export interface ProjectType {
   header: ProjectHeaderType
   description: string
   url: string
-  tags: ProjectTagsType
+  tags: ProjectTagsType[]
+  role: string
 }
 
 export interface ProjectHeaderType {
