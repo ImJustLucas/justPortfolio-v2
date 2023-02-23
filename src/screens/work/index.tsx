@@ -1,12 +1,21 @@
 import styled from 'styled-components'
 
-// import { WorkCard } from '@components/WorkCard'
+import { ProjectCard } from '@components/ProjectCard'
+import projects from '@data/projects'
 
 export default function About() {
   return (
     <WorkContainer>
       <TitleSection>This is what I created</TitleSection>
-      {/* <WorkCard work={} /> */}
+      <ProjectContainer>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            project={project}
+            rightSide={index % 2 === 1 ? false : true}
+          />
+        ))}
+      </ProjectContainer>
     </WorkContainer>
   )
 }
@@ -32,4 +41,12 @@ const TitleSection = styled.h2`
     font-size: 32px;
     text-align: center;
   }
+`
+
+const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
 `
