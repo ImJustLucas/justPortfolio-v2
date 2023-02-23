@@ -11,8 +11,17 @@ export const ProjectCard = ({
   rightSide: boolean
 }) => {
   console.log(project)
+
+  const handleClick = () => {
+    console.log('click')
+    window.open(project.url, '_blank', 'noopener,noreferrer')
+  }
+
   return (
-    <WorkCardContainer className={rightSide ? 'right' : 'left'}>
+    <WorkCardContainer
+      className={rightSide ? 'right' : 'left'}
+      onClick={handleClick}
+    >
       <ProjectHeader header={project.header} />
       <TagContainer>
         {project.tags.map((tag, index) => (
@@ -49,6 +58,10 @@ const WorkCardContainer = styled.div`
       margin-top: 0;
       margin-left: auto;
     }
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `
 

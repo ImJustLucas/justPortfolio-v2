@@ -27,7 +27,7 @@ const projects: ProjectType[] = [
       image: 'https://via.placeholder.com/100',
       date: '2023 - 202X',
     },
-    url: 'https://thetricksnetwork.com/platforms/tricks-social/',
+    url: 'https://musy.app',
     tags: [{ name: 'nuxt 3' }, { name: 'TypeScript' }],
     role: 'Creator, President, Developer',
     description:
