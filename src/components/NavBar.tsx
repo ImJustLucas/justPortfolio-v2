@@ -3,7 +3,11 @@ import { useRouter } from 'next/router'
 
 import { NavItem } from '@components/NavItem'
 
-export const NavBar = () => {
+type NavBarProps = {
+  handleMenu: () => void
+}
+
+export const NavBar = ({ handleMenu }: NavBarProps) => {
   const router = useRouter()
   const page = router.pathname
   let activePath = '0'
@@ -25,10 +29,10 @@ export const NavBar = () => {
 
   return (
     <Navbar activePath={activePath}>
-      <NavItem link="/" name="me" />
-      <NavItem link="/work" name="all my works" />
-      <NavItem link="/tech" name="tech i use" />
-      <NavItem link="/contact" name="contact me" />
+      <NavItem link="/" name="me" handleMenu={handleMenu} />
+      <NavItem link="/work" name="all my works" handleMenu={handleMenu} />
+      <NavItem link="/tech" name="tech i use" handleMenu={handleMenu} />
+      <NavItem link="/contact" name="contact me" handleMenu={handleMenu} />
     </Navbar>
   )
 }

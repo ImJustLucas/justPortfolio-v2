@@ -7,13 +7,15 @@ import useSound from 'use-sound'
 type NavItemProps = {
   link: LinkPathName
   name: string
+  handleMenu?: () => void
 }
 
-export const NavItem = ({ link, name }: NavItemProps) => {
+export const NavItem = ({ link, name, handleMenu }: NavItemProps) => {
   const [playClickSound] = useSound('/sounds/type.wav')
 
   const handleClick = () => {
     playClickSound()
+    handleMenu && handleMenu()
   }
   return (
     <NavItemContaier onClick={handleClick}>

@@ -28,7 +28,7 @@ export const Menu = () => {
         <TitleContainer>
           <Title>Lucas.</Title>
         </TitleContainer>
-        <NavBar />
+        <NavBar handleMenu={toggleMobileMenu} />
         <PresenceBlock />
         <IconRow />
       </Container>
