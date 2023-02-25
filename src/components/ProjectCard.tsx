@@ -63,6 +63,10 @@ const WorkCardContainer = styled.div`
   &:hover {
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const TagContainer = styled.div`

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { ProjectHeaderType } from '@typesDef/project'
 
 export const ProjectHeader = ({ header }: { header: ProjectHeaderType }) => {
+  console.log(header)
   return (
     <WorkHeaderContainer>
       <Image
@@ -20,7 +21,6 @@ export const ProjectHeader = ({ header }: { header: ProjectHeaderType }) => {
     </WorkHeaderContainer>
   )
 }
-
 const WorkHeaderContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -35,6 +35,9 @@ const HeaderContent = styled.div`
 
 const Title = styled.h3`
   font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 const Date = styled.small`
   font-size: 14px;
