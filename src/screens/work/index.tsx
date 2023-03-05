@@ -9,11 +9,7 @@ export default function About() {
       <TitleSection>This is what I created</TitleSection>
       <ProjectContainer>
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            project={project}
-            rightSide={index % 2 === 1 ? false : true}
-          />
+          <ProjectCard key={index} project={project} />
         ))}
       </ProjectContainer>
     </WorkContainer>

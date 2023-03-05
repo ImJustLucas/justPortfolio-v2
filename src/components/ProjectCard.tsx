@@ -3,13 +3,7 @@ import { ProjectType } from '@typesDef/project'
 import { ProjectHeader } from '@components/Project/ProjectHeader'
 import { ProjectTag } from '@components/Project/ProjectTag'
 
-export const ProjectCard = ({
-  project,
-  rightSide,
-}: {
-  project: ProjectType
-  rightSide: boolean
-}) => {
+export const ProjectCard = ({ project }: { project: ProjectType }) => {
   console.log(project)
 
   const handleClick = () => {
@@ -18,10 +12,7 @@ export const ProjectCard = ({
   }
 
   return (
-    <WorkCardContainer
-      className={rightSide ? 'right' : 'left'}
-      onClick={handleClick}
-    >
+    <WorkCardContainer onClick={handleClick}>
       <ProjectHeader header={project.header} />
       <TagContainer>
         {project.tags.map((tag, index) => (
@@ -45,19 +36,9 @@ const WorkCardContainer = styled.div`
   border-radius: 4px;
   padding: 10px;
   margin: 10px 0;
-  height: fit-content;
 
   @media (max-width: 1156px) {
     width: 70%;
-  }
-
-  &.left {
-    margin-top: 100px;
-
-    @media (max-width: 1156px) {
-      margin-top: 0;
-      margin-left: auto;
-    }
   }
 
   &:hover {
