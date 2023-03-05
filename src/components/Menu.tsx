@@ -44,6 +44,7 @@ const Container = styled.div<{ openOnMobile: boolean }>`
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  position: fixed;
 
   @media (max-width: 768px) {
     display: ${({ openOnMobile }) => (openOnMobile ? 'flex' : 'none')};

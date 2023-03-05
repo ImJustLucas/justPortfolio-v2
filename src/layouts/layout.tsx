@@ -23,4 +23,9 @@ const ScreenContainer = styled.div`
   height: 100vh;
   background-color: #fff;
   flex: 1;
+  margin-left: 30%;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `
