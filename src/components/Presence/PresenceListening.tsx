@@ -11,19 +11,17 @@ type PresenceListeningProps = {
 export const PresenceListening = ({ spotify }: PresenceListeningProps) => {
   return (
     <Container>
-      <>
-        <ActivityRow>
-          <ActivityImageContainer>
-            <ActivityImage src={spotify?.album_art_url} />
-            <ActivitySecondaryImage src={SpotifyLogo.src} />
-          </ActivityImageContainer>
+      <ActivityRow>
+        <ActivityImageContainer>
+          <ActivityImage src={spotify?.album_art_url} />
+          <ActivitySecondaryImage src={SpotifyLogo.src} />
+        </ActivityImageContainer>
 
-          <ActivityInfo>
-            <h5 style={{ color: COLORS.DARKBLUE }}>{spotify?.song}</h5>
-            <p>by {spotify?.artist}</p>
-          </ActivityInfo>
-        </ActivityRow>
-      </>
+        <ActivityInfo>
+          <h5 style={{ color: COLORS.DARKBLUE }}>{spotify?.song}</h5>
+          <p>by {spotify?.artist}</p>
+        </ActivityInfo>
+      </ActivityRow>
     </Container>
   )
 }
@@ -53,7 +51,7 @@ const ActivityImageContainer = styled.div`
 const ActivityImage = styled.img`
   height: 50px;
   width: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
 `
 
 const ActivitySecondaryImage = styled.img`

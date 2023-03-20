@@ -58,7 +58,7 @@ const ActivityImageContainer = styled.div`
 const ActivityImage = styled.img`
   height: 50px;
   width: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
 `
 
 const ActivitySecondaryImage = styled.img`
