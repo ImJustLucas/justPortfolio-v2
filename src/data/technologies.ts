@@ -1,41 +1,46 @@
 import { TechType } from '@typesDef/tech'
 
+import Nuxt from '@static/images/technologies/nuxt.svg'
+import Next from '@static/images/technologies/next.svg'
+import TS from '@static/images/technologies/typescript.svg'
+import Vue from '@static/images/vuejs-logo.png'
+import React from '@static/images/technologies/react.svg'
+
 const Technologies: TechType[] = [
   {
     name: 'Nuxt',
     description:
       'Nuxt.js is a free and open source web application framework based on Vue.js & Node.js',
-    image: '/images/technologies/nuxt.svg',
+    image: Nuxt,
+    date: 'since 2021',
   },
   {
     name: 'Next',
     description:
       'Next.js is a free and open source web application framework based on React.js developed by Vercel',
-    image: '/images/technologies/next.svg',
+    image: Next,
+    date: 'since 2023',
   },
   {
     name: 'TypeScript',
     description:
       'TypeScript is a free and open source programming language based on Javascript developed and maintained by Microsoft',
-    image: '/images/technologies/typescript.svg',
-  },
-  {
-    name: 'Express',
-    description:
-      'Express.js is a free and open source web application framework for Node.js',
-    image: '/images/technologies/express.svg',
+    image: TS,
+    date: 'since 2022',
   },
   {
     name: 'Vue',
     description:
       'Vue.js is a free and open source web application framework based on Javascript',
-    image: '/images/technologies/vue.svg',
+    image: Vue,
+    date: 'since 2021',
   },
   {
     name: 'React',
     description:
       'React is a free and open source web application framework based on Javascript',
-    image: '/images/technologies/react.svg',
+    image: React,
+    date: 'since 2022',
   },
 ]
 
