@@ -4,6 +4,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  runtime: 'edge',
   images: {
     remotePatterns: [
       {
