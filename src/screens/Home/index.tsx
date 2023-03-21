@@ -3,29 +3,27 @@ import styled from 'styled-components'
 export default function Home() {
   return (
     <HomeContainer>
-      <TitleSection>Hi, im Lucas</TitleSection>
+      <TitleSection>Hi, im Lucas 🧃</TitleSection>
       <TextContainer>
         <LeftTextContent>
-          Sloop red ensign code of conduct Buccaneer gun hands scuttle lee main
-          sheet matey. Strike colors heave down run a shot across the bow chase
-          guns rutters run a rig Buccaneer haul wind draught to go on account.
+          🚧 This portfolio is a work in progress. I&apos;m currently working on
+          it to 🚧
         </LeftTextContent>
         <LeftTextContent>
-          Fire ship square-rigged gibbet me hearties cackle fruit gunwalls
-          wherry scuttle cog. Fire ship square-rigged gibbet me hearties cackle
-          fruit gunwalls wherry scuttle cog.
+          I&apos;m a web developer based in france who love to create and share
+          ✨
         </LeftTextContent>
         <RightTextContent>
-          {' '}
-          Fire ship square-rigged gibbet me hearties cackle fruit gunwalls
-          wherry scuttle cog. Fire ship square-rigged gibbet me hearties cackle
-          fruit gunwalls wherry scuttle cog.
+          Fullstack web developer at TheTricksNetwork and work on Tricks.social
+          skate 🛹
         </RightTextContent>
         <RightTextContent>
-          {' '}
-          Fire ship square-rigged gibbet me hearties cackle fruit gunwalls
-          wherry scuttle cog. Fire ship square-rigged gibbet me hearties cackle
-          fruit gunwalls wherry scuttle cog.
+          Founder of Musy, I also work on StudioTalo, french based creative
+          studio
+        </RightTextContent>
+        <RightTextContent>
+          I also got a secret project that I&apos;m working on 🤫 only almost
+          good guys can know about it
         </RightTextContent>
       </TextContainer>
       <WorkContainer>
@@ -68,7 +66,7 @@ const TitleSection = styled.h2`
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 `
 
 const LeftTextContent = styled.p`
@@ -98,8 +96,7 @@ const WorkContainer = styled.div`
   width: 40%;
   margin-top: 50px;
 
-  @media (max-width: 768px);
-   {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
