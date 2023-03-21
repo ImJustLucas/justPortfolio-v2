@@ -62,7 +62,7 @@ const projects: ProjectType[] = [
       image: JustPortfolio,
       date: '2021',
     },
-    url: 'https://lucasblti.fr',
+    url: 'https://justportfolio-2021.pages.dev/',
     tags: [
       { name: 'Nuxt' },
       { name: 'Vue' },
