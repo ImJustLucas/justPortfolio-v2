@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 
 import { ProjectHeaderType } from '@typesDef/project'
@@ -6,7 +5,7 @@ import { ProjectHeaderType } from '@typesDef/project'
 export const ProjectHeader = ({ header }: { header: ProjectHeaderType }) => {
   return (
     <WorkHeaderContainer>
-      <Image
+      <ImageContainer
         src={`/images/projects/${header.image}`}
         width="100"
         height="100"
@@ -45,4 +44,9 @@ const Date = styled.small`
 const Description = styled.p`
   font-size: 16px;
   margin-top: auto;
+`
+
+const ImageContainer = styled.img`
+  width: 100px;
+  height: 100px;
 `
