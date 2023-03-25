@@ -8,7 +8,7 @@ export const TechRow = ({ technologie }: { technologie: TechType }) => {
     <TechRowContainer>
       <TechHeader>
         <Image
-          src={technologie.image}
+          src={technologie.image.src}
           width="100"
           height="100"
           alt={technologie.name}

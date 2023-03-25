@@ -3,6 +3,6 @@ import { StaticImageData } from 'next/image'
 export interface TechType {
   name: string
   description: string
-  image: string | StaticImageData
+  image: StaticImageData
   date: string
 }

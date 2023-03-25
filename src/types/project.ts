@@ -11,7 +11,7 @@ export interface ProjectType {
 export interface ProjectHeaderType {
   title: string
   description: string
-  image: string | StaticImageData
+  image: StaticImageData
   date: string
 }
 
