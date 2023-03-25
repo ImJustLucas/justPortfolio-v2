@@ -15,7 +15,7 @@ export default function Home() {
         </LeftTextContent>
         <RightTextContent>
           Fullstack web developer at TheTricksNetwork and work on Tricks.social
-          skate 🛹
+          🛹
         </RightTextContent>
         <RightTextContent>
           Founder of Musy, I also work on StudioTalo, french based creative
