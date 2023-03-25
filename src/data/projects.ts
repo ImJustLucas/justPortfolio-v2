@@ -1,8 +1,9 @@
 import { ProjectType } from '@typesDef/project'
-import Musy from '@static/images/musy.jpg'
-import Tricks from '@static/images/tricks.jpg'
-import JustPortfolio from '@static/images/justportfolio-v1.png'
-import JustPortfolioV2 from '@static/images/justportfolio-v2.png'
+
+import Musy from '@static/images/projects/musy.jpg'
+import Tricks from '@static/images/projects/tricks.jpg'
+import JustPortfolio from '@static/images/projects/justportfolio-v1.png'
+import JustPortfolioV2 from '@static/images/projects/justportfolio-v2.png'
 
 const projects: ProjectType[] = [
   {
