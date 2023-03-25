@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { ProjectHeaderType } from '@typesDef/project'
 
 export const ProjectHeader = ({ header }: { header: ProjectHeaderType }) => {
-  console.log(header.image.src)
   return (
     <WorkHeaderContainer>
       <Image

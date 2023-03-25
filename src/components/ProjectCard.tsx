@@ -4,10 +4,7 @@ import { ProjectHeader } from '@components/Project/ProjectHeader'
 import { ProjectTag } from '@components/Project/ProjectTag'
 
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
-  console.log(project)
-
   const handleClick = () => {
-    console.log('click')
     window.open(project.url, '_blank', 'noopener,noreferrer')
   }
 

@@ -12,7 +12,6 @@ export const Menu = () => {
 
   const toggleMobileMenu = () => {
     setOpenOnMobile(!openOnMobile)
-    console.log(openOnMobile)
   }
 
   return (
