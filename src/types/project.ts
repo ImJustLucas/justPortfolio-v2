@@ -1,5 +1,3 @@
-import { StaticImageData } from 'next/image'
-
 export interface ProjectType {
   header: ProjectHeaderType
   description: string
@@ -11,7 +9,7 @@ export interface ProjectType {
 export interface ProjectHeaderType {
   title: string
   description: string
-  image: StaticImageData
+  image: string
   date: string
 }
 

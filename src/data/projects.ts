@@ -1,16 +1,16 @@
 import { ProjectType } from '@typesDef/project'
 
-import Musy from '@static/images/projects/musy.jpg'
-import Tricks from '@static/images/projects/tricks.jpg'
-import JustPortfolio from '@static/images/projects/justportfolio-v1.png'
-import JustPortfolioV2 from '@static/images/projects/justportfolio-v2.png'
+// import Musy from '@static/images/projects/musy.jpg'
+// import Tricks from '@static/images/projects/tricks.jpg'
+// import JustPortfolio from '@static/images/projects/justportfolio-v1.png'
+// import JustPortfolioV2 from '@static/images/projects/justportfolio-v2.png'
 
 const projects: ProjectType[] = [
   {
     header: {
       title: 'The Tricks Network',
       description: 'Share the action, live your passion',
-      image: Tricks,
+      image: 'tricks.jpg',
       date: '2021 - 202X',
     },
     url: 'https://thetricksnetwork.com/platforms/tricks-social/',
@@ -29,7 +29,7 @@ const projects: ProjectType[] = [
     header: {
       title: 'MUSY',
       description: 'Ton nouveau terrain de jeu musical',
-      image: Musy,
+      image: 'musy.jpg',
       date: '2023 - 202X',
     },
     url: 'https://musy.app',
@@ -42,7 +42,7 @@ const projects: ProjectType[] = [
     header: {
       title: 'Just Portfolio - v2',
       description: 'JustPortfolio v2 2023 imagined and created by @ImJustLucas',
-      image: JustPortfolioV2,
+      image: 'justportfolio-v2.png',
       date: '2023',
     },
     url: 'https://lucasblti.fr',
@@ -60,7 +60,7 @@ const projects: ProjectType[] = [
     header: {
       title: 'Just Portfolio - v1',
       description: 'JustPortfolio v1 2021 créé et imaginé par ImJustLucas',
-      image: JustPortfolio,
+      image: 'justportfolio-v1.png',
       date: '2021',
     },
     url: 'https://justportfolio-2021.pages.dev/',

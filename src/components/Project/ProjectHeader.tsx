@@ -7,7 +7,7 @@ export const ProjectHeader = ({ header }: { header: ProjectHeaderType }) => {
   return (
     <WorkHeaderContainer>
       <Image
-        src={header.image.src}
+        src={`/images/projects/${header.image}`}
         width="100"
         height="100"
         alt="image du projet"
