@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 
 import { TechType } from '@typesDef/tech'
@@ -7,12 +6,7 @@ export const TechRow = ({ technologie }: { technologie: TechType }) => {
   return (
     <TechRowContainer>
       <TechHeader>
-        <Image
-          src={technologie.image.src}
-          width="100"
-          height="100"
-          alt={technologie.name}
-        />
+        <ImageContainer src={technologie.image.src} alt={technologie.name} />
         <TechName>{technologie.name}</TechName>
       </TechHeader>
       {/* <TechDate>
@@ -71,6 +65,12 @@ const TechName = styled.p`
     padding: 0 1rem;
   }
 `
+
+const ImageContainer = styled.img`
+  width: 100px;
+  height: 100px;
+`
+
 // const TechDate = styled.div`
 //   display: flex;
 //   align-items: center;
