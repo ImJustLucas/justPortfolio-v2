@@ -58,6 +58,24 @@ const projects: ProjectType[] = [
   },
   {
     header: {
+      title: 'DAILY.YOU',
+      description: 'The easy way to document your life',
+      image: 'daily-you.png',
+      date: '2023',
+    },
+    url: 'https://daily-you.pages.dev/',
+    tags: [
+      { name: 'Next' },
+      { name: 'TypeScript' },
+      { name: 'React' },
+      { name: 'Styled Component' },
+    ],
+    role: 'Founder',
+    description:
+      'PROJECT IN DEVELOPMENT - DAILY.YOU are an app designed for daily journaling. Every day/week you have to write down three good things that happened to you + one habit that you could do better to improve in the future. And it only takes 5m per day.',
+  },
+  {
+    header: {
       title: 'Just Portfolio - v1',
       description: 'JustPortfolio v1 2021 créé et imaginé par ImJustLucas',
       image: 'justportfolio-v1.png',
