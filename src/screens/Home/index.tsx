@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export default function Home() {
   return (
     <HomeContainer>
-      <TitleSection>Hi, im Lucas 🧃</TitleSection>
+      <TitleSection>Hi, im Lucas ☀️</TitleSection>
       <TextContainer>
         <LeftTextContent>
           🚧 This portfolio is a work in progress. I&apos;m currently working on
@@ -18,12 +18,13 @@ export default function Home() {
           🛹
         </RightTextContent>
         <RightTextContent>
-          Founder of Musy, I also work on StudioTalo, french based creative
-          studio
+          Founder of Musy, a brand new way to play music games online <br />
+          I&apos;ve also created daily.you, a daily journal app for everyone
         </RightTextContent>
         <RightTextContent>
-          I also got a secret project that I&apos;m working on 🤫 only almost
-          good guys can know about it
+          I work on my free time with a friend on StudioTalo, french based
+          creative studio <br />I also got a secret project that I&apos;m
+          working on 🤫 only almost good guys can know about it
         </RightTextContent>
       </TextContainer>
       <WorkContainer>

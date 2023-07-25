@@ -5,6 +5,7 @@ import Next from '@static/images/technologies/next.svg'
 import TS from '@static/images/technologies/typescript.svg'
 import Vue from '@static/images/vuejs-logo.png'
 import React from '@static/images/technologies/react.svg'
+import Nest from '@static/images/technologies/nestjs.svg'
 
 const Technologies: TechType[] = [
   {
@@ -19,6 +20,13 @@ const Technologies: TechType[] = [
     description:
       'Next.js is a free and open source web application framework based on React.js developed by Vercel',
     image: Next,
+    date: 'since 2023',
+  },
+  {
+    name: 'Nest',
+    description:
+      'Nest.js is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.',
+    image: Nest,
     date: 'since 2023',
   },
   {
